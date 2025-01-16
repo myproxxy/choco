@@ -29,6 +29,7 @@
 	    .main-content {
 	      padding: 20px;
 	      color: #d4a373; /* Heller Braunton passend zum Logo */
+	      flex: 1; /* Füllt den verbleibenden Platz zwischen Header und Footer */
 	    }
 
 	    .main-content h1 {
@@ -49,8 +50,17 @@
 	      color: #d4a373;
 	      padding: 20px;
 	      font-size: 0.9rem;
+	      text-align: center;
 	    }
-
+			/*
+	    .footer {
+	      background-color: #333333;
+	      color: #d4a373;
+	      padding: 20px;
+	      text-align: center;
+				} 
+			*/
+			
 	    .footer a {
 	      color: #d4a373;
 	      text-decoration: none;
@@ -230,9 +240,13 @@
     </div-->
 </div>
   <!-- Footer -->
-  <div class="footer">
+  <!--div class="footer">
     © 2025 STARK - Alle Rechte vorbehalten. | <a href="#">Impressum</a>
+  </div-->
+  <div class="footer">
+    © 2025 STARK - Alle Rechte vorbehalten.
   </div>
+	
 		<script>
 		let slideIndex = 0;
 		showSlides();
