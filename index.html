@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pralinen Galerie</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 80%;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: none;
+        }
+
+        .slides img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .dots {
+            text-align: center;
+            position: absolute;
+            bottom: 15px;
+            width: 100%;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+    </style>
+</head>
+<body>
+<div class="slideshow-container">
+    <!-- Slides -->
+    <div class="slides">
+        <img src="img/verbessert/praline1.png" alt="Praline 1">
+    </div>
+    <div class="slides">
+        <img src="img/verbessert/praline2.png" alt="Praline 2">
+    </div>
+    <div class="slides">
+        <img src="img/verbessert/praline3.png" alt="Praline 3">
+    </div>
+    <div class="slides">
+        <img src="img/verbessert/praline4.png" alt="Praline 4">
+    </div>
+    <div class="slides">
+        <img src="img/verbessert/praline5.png" alt="Praline 5">
+    </div>
+    <div class="slides">
+        <img src="img/praline6.png" alt="Praline 6">
+    </div>
+    <div class="slides">
+        <img src="img/praline7.png" alt="Praline 7">
+    </div>
+    <div class="slides">
+        <img src="img/praline8.png" alt="Praline 8">
+    </div>
+    <div class="slides">
+        <img src="img/praline9.png" alt="Praline 9">
+    </div>
+    <div class="slides">
+        <img src="img/praline10.png" alt="Praline 10">
+    </div>
+    <div class="slides">
+        <img src="img/praline11.png" alt="Praline 11">
+    </div>
+    <div class="slides">
+        <img src="img/praline12.png" alt="Praline 12">
+    </div>
+    <div class="slides">
+        <img src="img/praline13.png" alt="Praline 13">
+    </div>
+    <div class="slides">
+        <img src="img/praline14.png" alt="Praline 14">
+    </div>
+    <div class="slides">
+        <img src="img/praline15.png" alt="Praline 15">
+    </div>
+    <div class="slides">
+        <img src="img/praline16.png" alt="Praline 16">
+    </div>
+    <div class="slides">
+        <img src="img/praline17.png" alt="Praline 17">
+    </div>
+    <div class="slides">
+        <img src="img/praline18.png" alt="Praline 18">
+    </div>
+    <div class="slides">
+        <img src="img/praline19.png" alt="Praline 19">
+    </div>
+    <div class="slides">
+        <img src="img/praline20.png" alt="Praline 20">
+    </div>
+    <div class="slides">
+        <img src="img/praline21.png" alt="Praline 21">
+    </div>
+    <div class="slides">
+        <img src="img/praline22.png" alt="Praline 22">
+    </div>
+    <div class="slides">
+        <img src="img/praline23.png" alt="Praline 23">
+    </div>
+    <div class="slides">
+        <img src="img/praline24.png" alt="Praline 24">
+    </div>
+    <div class="slides">
+        <img src="img/praline25.png" alt="Praline 25">
+    </div>
+    <div class="slides">
+        <img src="img/praline26.png" alt="Praline 26">
+    </div>
+    <div class="slides">
+        <img src="img/praline27.png" alt="Praline 27">
+    </div>
+    <div class="slides">
+        <img src="img/praline28.png" alt="Praline 28">
+    </div>
+    <div class="slides">
+        <img src="img/praline29.png" alt="Praline 29">
+    </div>
+    <div class="slides">
+        <img src="img/praline30.png" alt="Praline 30">
+    </div>
+    <div class="slides">
+        <img src="img/praline31.png" alt="Praline 31">
+    </div>
+    <div class="slides">
+        <img src="img/praline32.png" alt="Praline 32">
+    </div>
+    <div class="slides">
+        <img src="img/praline33.png" alt="Praline 33">
+    </div>
+</div>
+
+    <!--script>
+        let slideIndex = 0;
+        const showSlides = () => {
+            const slides = document.querySelectorAll('.slides');
+            const dots = document.querySelectorAll('.dot');
+
+            slides.forEach((slide, index) => {
+                slide.style.display = 'none';
+                dots[index].classList.remove('active');
+            });
+
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            slides[slideIndex - 1].style.display = 'block';
+            dots[slideIndex - 1].classList.add('active');
+            setTimeout(showSlides, 2000); // Wechselt alle 3 Sekunden
+        };
+
+        showSlides();
+    </script-->
+		<script>
+		let slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		    let slides = document.getElementsByClassName("slides");
+		    for (let i = 0; i < slides.length; i++) {
+		        slides[i].style.display = "none";
+		    }
+		    slideIndex++;
+		    if (slideIndex > slides.length) {
+		        slideIndex = 1;
+		    }
+		    slides[slideIndex - 1].style.display = "block";
+		    setTimeout(showSlides, 1800); // Ändert alle 3 Sekunden
+		}
+		</script>	
+			
+</body>
+</html>
