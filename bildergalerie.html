@@ -16,24 +16,6 @@
 	      line-height: 1.3;
 	      text-align: center;
 	    }
-      table {
-          margin: 20px auto;
-          border-collapse: collapse;
-      }
-      td {
-          padding: 10px;
-          vertical-align: top;
-      }
-      img {
-          max-width: 300px;
-          height: auto;
-      }
-      .description {
-          font-style: italic;
-					color: rgb(103, 47, 2)
-          color: #888;
-      }
-
 	    /* Header Section */
 	    .header {
 	      padding:50px 20px
@@ -47,7 +29,7 @@
 	      width: 300px; /* Logo-Breite anpassen */
 	      max-width: 100%;
 	    }
-
+        
 	    /* Hauptinhalt */
 	    .main-content {
 	      padding: 20px;
@@ -60,24 +42,62 @@
 				color: rgb(103, 47, 2);
 	      /*color: #ffffff; */
 	    }
+        
+        .centerdiv {
+          width: 50%; /* Feste Breite oder max-width */
+          margin-left: auto;
+          margin-right: auto;
+        }        
+        .slideshow-container {
+            position: relative;
+            /*max-width: 700px;*/
+            overflow: hidden;
+            /*height: 850px; /* Fixiere die Höhe */
+  display: flex; /* Aktiviert Flexbox */
+  justify-content: center; /* Zentriert horizontal (falls nötig) */
+  align-items: center; /* Zentriert vertikal */
+            text-align: center;
 
-	    .main-content p {
-	      font-size: 1.2rem;
-	      color: #d4a373;
-				color: rgb(103, 47, 2);
-	      max-width: 800px;
-	      margin: 20px auto;
-	    }
-			.thin { font-weight: 100; }
-
-	    .main-content div {
-	      line-height: 1.3;
-	      font-size: 0.9rem;
-	      color: #d4a373;
-	      max-width: 800px;
-	      margin: 20px auto;
-	    }
-
+        }
+        .slide {
+            display: none;
+   width: 80%; /* Beispielbreite */
+  /*max-width: 1200px;  Maximalbreite */
+  padding: 20px; /* Beispielpadding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
+    align-items: center; /* Zentriert vertikal */
+          
+        }
+        .slide.active {
+            display: block;
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .arrow.left {
+            left: 10px;
+        }
+        .arrow.right {
+            right: 10px;
+        }
+        img {
+            width: 100%;
+            border: 2px solid white;
+        }
+        .logo {
+            width: 100%;
+            border: 0px solid white;
+        }
+        .caption {
+            text-align: center;
+            margin-top: 10px;
+        }     
+        
 	    /* Footer */
 	    .footer {
 	      background-color: #333333;
@@ -101,120 +121,110 @@
         .active {
             background-color: #717171;
         }
-				
-
+				        
+        
     </style>
 </head>
 <body>
   <!-- Header -->
   <div class="header">
-    <img src="img/logo.png" alt="STARK Logo">
+    <img class="logo" src="img/logo.png" alt="STARK Logo">
   </div>
-	
+ 
   <div class="main-content">
     <h1>Bildergalerie</h1>
-    <div>
-    <table>
-        <tr>
-            <td><img src="img/praline1.png" alt="praline1.png"></td>
-        </tr>
-        <tr>
-            <td class="description">Weisse Schokoladetafeln ca 33g mit dunkler Couverture verziert</td>
-        </tr>
-        <tr>
-            <td><img src="img/praline10.png" alt="praline10.png"></td>
-        </tr>
-        <tr>
-            <td class="description">Dunkle Herzpraline mit Vanille-Ganache Füllung</td>
-        </tr>
-        <tr>
-            <td><img src="img/praline11.png" alt="praline11.png"></td>
-        </tr>
-        <tr>
-            <td class="description">Herzpraline aus Milchschokolade mit gehackten, gerösteten Haselnusskernen</td>
-        </tr>
-        <tr>
-            <td><img src="img/praline12.png" alt="praline12.png"></td>
-        </tr>
-        <tr>
-            <td class="description">Set Dunkle Schokoladentafeln ca 33g mit heller Couverture verziert</td>
-        </tr>
-        <tr>
-            <td><img src="img/praline13.png" alt="praline13.png"></td>
-        </tr>
-        <tr>
-            <td class="description">Tafelschokolade Eigenkreation Kashmir: Weisse Schokolade mit Safran und gehackten, gerösteten, leicht gesaltenen Pistazienkernen</td>
-        </tr>
-        <tr>
-            <td><img src="img/praline14.png" alt="praline14.png"></td>
-        </tr>
-        <tr>
-            <td class="description">Bi-Color Nussherzchen: Weisse Schokolade ergänzt durch Milchschokolade mit fein gehackten, gerösteten Haselnusskernen</td>
-        </tr>
-        <tr>
-            <td><img src="img/praline15.png" alt="praline15.png"></td>
-        </tr>
-        <tr>
-            <td class="description">Dubai-Tafelschokolade ca 80g</td>
-        </tr>
-        <tr>
-            <td><img src="img/praline16.png" alt="praline16.png"></td>
-        </tr>
-        <tr>
-            <td class="description">Bi-Color Herzen mit einer Milchschokoladen-Ganache und einem ganzen Haselnusskern als Füllung.</td>
-        </tr>
-        <tr>
-            <td><img src="img/praline2.png" alt="praline2.png"></td>
-        </tr>
-        <tr>
-            <td class="description">Kashmirschokoladentafel mit Kakao verziert (Eigenkreation - vgl Angebot)</td>
-        </tr>
-        <tr>
-            <td><img src="img/praline3.png" alt="praline3.png"></td>
-        </tr>
-        <tr>
-            <td class="description">Tafelschokolade Kashmir ca 33g pro Tafel (Eigenkreation - vgl Angebot) als 3er Bündel.</td>
-        </tr>
-        <tr>
-            <td><img src="img/praline4.png" alt="praline4.png"></td>
-        </tr>
-        <tr>
-            <td class="description">Dunkle Schokolade als Herzen und Tafeln à ca 33g</td>
-        </tr>
-        <tr>
-            <td><img src="img/praline5.png" alt="praline5.png"></td>
-        </tr>
-        <tr>
-            <td class="description">Verpackung der Pralinen und Tafel</td>
-        </tr>
-        <tr>
-            <td><img src="img/praline6.png" alt="praline6.png"></td>
-        </tr>
-        <tr>
-            <td class="description">Dubaischokolade als Tafeln à ca 80g oder Pralinen in Form von Herzen oder Diamanten</td>
-        </tr>
-        <tr>
-            <td><img src="img/praline7.png" alt="praline7.png"></td>
-        </tr>
-        <tr>
-            <td class="description">Diamantpraline 1001 Nacht (Eigenkreation - vgl Angebot)</td>
-        </tr>
-        <tr>
-            <td><img src="img/praline8.png" alt="praline8.png"></td>
-        </tr>
-        <tr>
-            <td class="description">Diamantpraline Bebbi Schmaus (Eigenkreation - vgl Angebot)</td>
-        </tr>
-        <tr>
-            <td><img src="img/praline9.png" alt="praline9.png"></td>
-        </tr>
-        <tr>
-            <td class="description">Herzpraline dunkel mit einer Pistazien-Ganache als Füllung</td>
-        </tr>
+  </div>
 
-    </table>
-		</div>
-	</div>	
+<div class="centerdiv">
+  <div class="slideshow-container"> 
+            
+            <div class="slide">
+                <img src="img/praline6.png" alt="Dubaischokolade als Tafeln à ca 80g oder Pralinen in Form von Herzen oder Diamanten">
+                <div class="caption">Dubaischokolade als Tafeln à ca 80g oder Pralinen in Form von Herzen oder Diamanten</div>
+            </div>
+      
+            <div class="slide">
+                <img src="img/praline1.png" alt="Weisse Schokoladetafeln ca 33g mit dunkler Couverture verziert">
+                <div class="caption">Weisse Schokoladetafeln ca 33g mit dunkler Couverture verziert</div>
+            </div>
+            
+
+            <div class="slide">
+                <img src="img/praline2.png" alt="Kashmirschokoladentafel mit Kakao verziert (Eigenkreation - vgl Angebot)">
+                <div class="caption">Kashmirschokoladentafel mit Kakao verziert (Eigenkreation - vgl Angebot)</div>
+            </div>
+            
+            <div class="slide">
+                <img src="img/praline3.png" alt="Tafelschokolade Kashmir ca 33g pro Tafel (Eigenkreation - vgl Angebot) als 3er Bündel.">
+                <div class="caption">Tafelschokolade Kashmir ca 33g pro Tafel (Eigenkreation - vgl Angebot) als 3er Bündel.</div>
+            </div>
+            
+            <div class="slide">
+                <img src="img/praline4.png" alt="Dunkle Schokolade als Herzen und Tafeln à ca 33g">
+                <div class="caption">Dunkle Schokolade als Herzen und Tafeln à ca 33g</div>
+            </div>
+            
+            <div class="slide">
+                <img src="img/praline5.png" alt="Verpackung der Pralinen und Tafel">
+                <div class="caption">Verpackung der Pralinen und Tafel</div>
+            </div>
+
+            
+            <div class="slide">
+                <img src="img/praline7.png" alt="Diamantpraline 1001 Nacht (Eigenkreation - vgl Angebot)">
+                <div class="caption">Diamantpraline 1001 Nacht (Eigenkreation - vgl Angebot)</div>
+            </div>
+            
+            <div class="slide">
+                <img src="img/praline8.png" alt="Diamantpraline Bebbi Schmaus (Eigenkreation - vgl Angebot)">
+                <div class="caption">Diamantpraline Bebbi Schmaus (Eigenkreation - vgl Angebot)</div>
+            </div>
+            
+            <div class="slide">
+                <img src="img/praline9.png" alt="Herzpraline dunkel mit einer Pistazien-Ganache als Füllung">
+                <div class="caption">Herzpraline dunkel mit einer Pistazien-Ganache als Füllung</div>
+            </div>
+            
+            <div class="slide">
+                <img src="img/praline10.png" alt="Dunkle Herzpraline mit Vanille-Ganache Füllung">
+                <div class="caption">Dunkle Herzpraline mit Vanille-Ganache Füllung</div>
+            </div>
+            
+            <div class="slide">
+                <img src="img/praline11.png" alt="Herzpraline aus Milchschokolade mit gehackten, gerösteten Haselnusskernen">
+                <div class="caption">Herzpraline aus Milchschokolade mit gehackten, gerösteten Haselnusskernen</div>
+            </div>
+            
+            <div class="slide">
+                <img src="img/praline12.png" alt="Set Dunkle Schokoladentafeln ca 33g mit heller Couverture verziert">
+                <div class="caption">Set Dunkle Schokoladentafeln ca 33g mit heller Couverture verziert</div>
+            </div>
+            
+            <div class="slide">
+                <img src="img/praline13.png" alt="Tafelschokolade Eigenkreation Kashmir: Weisse Schokolade mit Safran und gehackten, gerösteten, leicht gesaltenen Pistazienkernen">
+                <div class="caption">Tafelschokolade Eigenkreation Kashmir: Weisse Schokolade mit Safran und gehackten, gerösteten, leicht gesaltenen Pistazienkernen</div>
+            </div>
+            
+            <div class="slide">
+                <img src="img/praline14.png" alt="Bi-Color Nussherzchen: Weisse Schokolade ergänzt durch Milchschokolade mit fein gehackten, gerösteten Haselnusskernen">
+                <div class="caption">Bi-Color Nussherzchen: Weisse Schokolade ergänzt durch Milchschokolade mit fein gehackten, gerösteten Haselnusskernen</div>
+            </div>
+            
+            <div class="slide">
+                <img src="img/praline15.png" alt="Dubai-Tafelschokolade ca 80g">
+                <div class="caption">Dubai-Tafelschokolade ca 80g</div>
+            </div>
+            
+            <div class="slide">
+                <img src="img/praline16.png" alt="Bi-Color Herzen mit einer Milchschokoladen-Ganache und einem ganzen Haselnusskern als Füllung.">
+                <div class="caption">Bi-Color Herzen mit einer Milchschokoladen-Ganache und einem ganzen Haselnusskern als Füllung.</div>
+            </div>
+
+  
+      <span class="arrow left" onclick="changeSlide(-1)">&#10094;</span>
+      <span class="arrow right" onclick="changeSlide(1)">&#10095;</span>
+  </div>     <!-- slide-container -->
+</div>     <!-- centerdiv -->
 	<p>
 		Ich freue mich auf Ihre Kontaktaufnahme und Anfrage! Individuellen Wünschen gegenüber bin ich sehr offen.
 		<p>
@@ -223,16 +233,27 @@
 		<p>
 			<a href="angebot.html">Angebot</a>
 		</p>	
-	</p>		
-
+	</p>	
+ 
+    
   <!-- Footer -->
-  <!--div class="footer">
-    © 2025 STARK - Alle Rechte vorbehalten. | <a href="#">Impressum</a>
-  </div-->
   <div class="footer">
     © 2025 STARK - Alle Rechte vorbehalten. Kontakt: hjstark@proxxy.org
-  </div>
-
-			
+  </div>  
+    
+  <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll('.slide');
+      function changeSlide(direction) {
+          slides[currentSlide].classList.remove('active');
+          currentSlide = (currentSlide + direction + slides.length) % slides.length;
+          slides[currentSlide].classList.add('active');
+      }
+      slides[currentSlide].classList.add('active');
+  </script>
+	
+  
+    
 </body>
-</html>
+        
+        
