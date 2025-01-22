@@ -16,7 +16,23 @@
 	      line-height: 1.3;
 	      text-align: center;
 	    }
+        
+        .beschreibungsliste {
+            list-style-type: disc; /* Standard-Aufzählungszeichen (Punkte) */
+            /*list-style-type: none; /* Entfernt die Standard-Aufzählungspunkte */
+            margin: 0;
+            padding: 0;
+            padding-left: 10%; /* Abstand von 30% vom linken Rand */
+            text-align: left;  /* Links ausgerichtet */
+        }
 
+        /*
+        .beschreibungsliste li {
+            margin-bottom: 10px; /* Abstand zwischen den Einträgen */
+            /*font-size: 16px;    /* Schriftgröße */
+            /*line-height: 1.3;   /* Zeilenhöhe für Lesbarkeit */
+        }        
+        */
         a:link {
           color: #007BFF; /* Blau als Beispiel */
           text-decoration: none; /* Optional: keine Unterstreichung */
@@ -106,7 +122,6 @@
             background-color: #717171;
         }
 				
-
     </style>
 </head>
 <body>
@@ -133,27 +148,34 @@
       <div>
         <i>Standardprodukte</i>: Natürlich ist auch Dubai-Schokolade o.ä. erhältlich
       </div>		
-  </div>
+
 	<p>
-                <div>
+        <div>
 	       <i><u>Eigenkreationen</u></i>:<br> 
-				> <b>1001 Nacht</b>: Dunkle Couverture mit einer Dattel-basierten Ganache und einem Schuss Espresso<br>
-				> <b>1001 Tag</b>: Helle Couverture mit einer Dattel-basierten Ganache und einem Schuss Espresso<br>
-				> <b>1001 Dämmerung</b>: Milch-Couverture mit einer Dattel-basierten Ganache und einem Schuss Espresso<br>
-	      > <b>Kashmir Traum</b>: Helle Couverture mit Safran und gebrochenen, gerösteten Pistazien oder Cashewnusskernen<br>
-	      > <b>Bebbi Schmaus</b>: Frei wählbare Couverture mit einer Läckerli-basierten Canache<br>
+            <ul class="beschreibungsliste">
+				<li> <b>1001 Nacht</b>: Dunkle Couverture mit einer Dattel-basierten Ganache und einem Schuss Espresso</li>
+				<li> <b>1001 Tag</b>: Helle Couverture mit einer Dattel-basierten Ganache und einem Schuss Espresso</li>
+				<li> <b>1001 Dämmerung</b>: Milch-Couverture mit einer Dattel-basierten Ganache und einem Schuss Espresso</li>
+	            <li> <b>Kashmir Traum</b>: Helle Couverture mit Safran und gebrochenen, gerösteten Pistazien oder Cashewnusskernen</li>
+	            <li> <b>Bebbi Schmaus</b>: Frei wählbare Couverture mit einer Läckerli-basierten Canache</li>
+	            <li> <b>Chili Boost</b>: Frei wählbare Couverture mit einer mit Chili geimpften Canache</li>
+ 	            <li> <b>Ingwer Kick</b>: Frei wählbare Couverture mit einer mit Ingwer geimpften Canache</li>
+ 	            <li> <b>... </b>: weitere Kreationen - auch auf Anfrage</li>
+                
+            </ul>
         </div>	
         <br>
         <div>
 	       <i><u>Beispiele Standards</u></i>:<br> 
-				> <b>Bi-Color Pralinen</b> aus weisser und Milch-Couverture mit einer Milchschokoladen-Ganache und einem ganzen Haselnusskern<br>
-	      > <b>Nuss-Herzen</b>: Frei wählbare Couverture / Schokolade mit gehackten, gerösteten Haselnusskernen<br>
-	      > <b>Vanille Pralinen</b> aus frei wählbare Couverture mit einer hellen Vanille-Ganache<br>
-          > <b>Dubai-Schokolade</b></br>
-          > <b>Pistazien-Pralinen</b>: Frei wählbare Couverture mit einer Ganache aus gerösteten, leicht gesalzenen pürierten Pistazienkernmasse</br>
-          > <b>Truffes</b>: Frei wählbare Couverture mit diversen zur Auswahl stehenden Ganaches</br>
-          > <b>Tiramisù-Truffes</b>: Truffes mit einer Tiramisù-Füllung und umhüllt von Kakao-Pulver</br>
-    
+             <ul class="beschreibungsliste"> 
+                  <li> <b>Bi-Color Pralinen</b> aus weisser und Milch-Couverture mit einer Milchschokoladen-Ganache und einem ganzen Haselnusskern</li>
+                  <li> <b>Nuss-Herzen</b>: Frei wählbare Couverture / Schokolade mit gehackten, gerösteten Haselnusskernen</li>
+                  <li> <b>Vanille Pralinen</b> aus frei wählbare Couverture mit einer hellen Vanille-Ganache</li>
+                  <li> <b>Dubai-Schokolade</b></li>
+                  <li> <b>Pistazien-Pralinen</b>: Frei wählbare Couverture mit einer Ganache aus gerösteten, leicht gesalzenen pürierten Pistazienkernmasse</li>
+                  <li> <b>Truffes</b>: Frei wählbare Couverture mit diversen zur Auswahl stehenden Ganaches</li>
+                  <li> <b>Tiramisù-Truffes</b>: Truffes mit einer Tiramisù-Füllung und umhüllt von Kakao-Pulver</li>
+             </ul>
         </div>	
 	</p>
 	<p>
@@ -165,7 +187,7 @@
 			<a href="bildergalerie.html">Bildergalerie</a>
 		</p>	
 	</p>		
-
+  </div> <!-- class main-content-->
 	
 
   <!-- Footer -->
